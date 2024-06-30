@@ -3,10 +3,17 @@
 
 Greetings,
 
-I am **Naman Deep**, a freelance 3D generalist specialized in 3D Vehicles and part-time programmer from Delhi, India. Initially I wandered in 3D for years learning mutliple workflows of different field from modelling to 3D rendering, and the stuff in the middle too. I decided to hone my skills in game-industry with focus to Vehicles after I read an article from Karol Miklas about game-dev Vehicles. ![Profile](/assets/images/Profile.png)
+<div style="display: flex; align-items: center;">
+    <div style="flex: 1;">
+        I am Naman Deep, a freelance 3D generalist specialized in 3D Vehicles and part-time programmer from Delhi, India. Initially I wandered in 3D for years learning mutliple workflows of different field from modelling to 3D rendering, and the stuff in the middle too. I decided to hone my skills in game-industry with focus to Vehicles.
+        
+    </div>
+    <div style="flex: 0 0 auto; margin-left: 20px;">
+        <img src ="assets/images/Profile.png" alt = "Profile" style="width: 200px; height: auto;">
+    </div>
+</div>
 
 My recent professional projects include the BeamNG *Hirochi-Aurata* UTV vehice, BeamNG trailers, Cement Mixer. Other Car projects for Leartes Studios and QORPO.
-
 Apart from my professional work, I love to do programming on the side that helps me with problem-solving in different scenarios. I originally started with C++. But for scripting I learned python. I got started in blender script development after I had a small idea of renaming two objects using blender-script [Rename using Python](https://blender.stackexchange.com/questions/248812/script-to-rename-selected-object-same-as-the-active-object-plus-a-suffix). 
 Thanks to the answer by **Marty Fotus**. 
 I had gotten a baseline to start my tools development. My Object renamer still has parts from his code as a tribute to his help.

@@ -44,3 +44,5 @@ The tool is oriented towards production stages where efficiency is appreciated. 
 ### Download and Installation
 Install from our github or gumroad, gumroad is helpful just in case you wanna be notified of new releases. 
 
+* [Github](https://github.com/deepdesperate)
+* [Gumroad](https://namandeep.gumroad.com/)
