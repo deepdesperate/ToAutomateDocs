@@ -11,6 +11,18 @@ Collection of blender tools to optimize different Game-artist workflows.
 4. This addon is always in an evolving stage to offer newer tools for workflows.
 5. Developed by me, I work as a freelance Vehicle Artist, trying to adapt to my different clients, and I find different things to impprove with each encounter.
 
+## Getting Started
+### Download and Installation
+Install from our github or gumroad, gumroad is helpful just in case you wanna be notified of new releases. 
+
+* [Github](https://github.com/deepdesperate)
+* [Gumroad](https://namandeep.gumroad.com/)
+
+<!-- Add Information about installing in Blender 4.2 -->
+
+After downloading, the addon can be installed by going to **File > User Preferences > addons.** Click at Install from FIle and specify the object_renamer.py file in the newly opened window. Object Renamer should now appear in your addons window and can be activated. 
+Please contact me in case you run into any issues.
+
 ## Feature Overview
 
 * `Object Rename` operator that can rename objects based on the active object, like active_object_LP, active_object_HP with option to move the suffix objects to their defined collections
@@ -40,9 +52,3 @@ The tool is oriented towards production stages where efficiency is appreciated. 
 - **UV-Tools** UV Tools to help check whether every Baking objects has their Mirror/Array modifiers have offset, so they don't bake artifacts by mistake due to inverted mesh overlapping.
 - At the end of the day, we want to work on our projects/task, with minimum bugs, export and baking mesh just to find out that one mesh wasn't named properly or somehow that one didn't have UV offset, that cycle can go repeatedly and in a game-dev environment can be frustrating.
 
-## Getting Started
-### Download and Installation
-Install from our github or gumroad, gumroad is helpful just in case you wanna be notified of new releases. 
-
-* [Github](https://github.com/deepdesperate)
-* [Gumroad](https://namandeep.gumroad.com/)

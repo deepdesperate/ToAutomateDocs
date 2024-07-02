@@ -20,9 +20,11 @@ I had gotten a baseline to start my tools development. My Object renamer still h
 
 In my day to day work, I note down things which I can further improve and workflows that needs some automation. I want the artist to create and let the scripts and addons do the heavy-lifting to organizing, managing collection heirarchy and export system. I am still trying to find users for my script. So if someone is reading this, I am really thankful. Hope it helped you in some way.
 
+## Portfolio
+
 * [Artstation](https://www.artstation.com/naman)
 * [Sketchfab](https://sketchfab.com/namandeep444)
 
-## Addon Sites
+## Addon Links
 * [Github](https://github.com/deepdesperate)
 * [Gumroad](https://namandeep.gumroad.com/)

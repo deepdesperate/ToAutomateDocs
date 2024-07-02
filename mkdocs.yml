@@ -1,7 +1,10 @@
 site_name: Object Renamer
 nav:
   - Home: index.md
-  - Object Renamer: object_renamer.md
+  - Object Renamer: 
+    - Overview: object_renamer.md
+    - UI: obre_UI.md
+    - Renamer: obre_op_renamer.md
   - Test: test.md
   - About: about.md
 theme: readthedocs
