@@ -52,3 +52,4 @@ The tool is oriented towards production stages where efficiency is appreciated. 
 - **UV-Tools** UV Tools to help check whether every Baking objects has their Mirror/Array modifiers have offset, so they don't bake artifacts by mistake due to inverted mesh overlapping.
 - At the end of the day, we want to work on our projects/task, with minimum bugs, export and baking mesh just to find out that one mesh wasn't named properly or somehow that one didn't have UV offset, that cycle can go repeatedly and in a game-dev environment can be frustrating.
 
+

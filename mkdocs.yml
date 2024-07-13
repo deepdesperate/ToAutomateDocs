@@ -5,6 +5,7 @@ nav:
     - Overview: object_renamer.md
     - UI: obre_UI.md
     - Renamer: obre_op_renamer.md
+    - Collection Organizer: obre_op_colOrganize.md
   - Test: test.md
   - About: about.md
 theme: readthedocs
