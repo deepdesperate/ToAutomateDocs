@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Object Renamer - Object Renamer</title>
+    <title>Overview - Object Renamer</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Object Renamer";
+        var mkdocs_page_name = "Overview";
         var mkdocs_page_input_path = "object_renamer.md";
         var mkdocs_page_url = null;
       </script>
@@ -43,14 +43,11 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Object Renamer</span></p>
               <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Object Renamer</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Overview</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#feature-overview">Feature Overview</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#why-object-renamer-tools">Why Object Renamer Tools?</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a>
         <ul>
@@ -58,8 +55,18 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#feature-overview">Feature Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#why-object-renamer-tools">Why Object Renamer Tools?</a>
+    </li>
     </ul>
-                </li>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obre_UI/">UI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_renamer/">Renamer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_colOrganize/">Collection Organizer</a>
+                  </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../test/">Test</a>
@@ -83,7 +90,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Object Renamer</li>
+          <li class="breadcrumb-item">Object Renamer</li>
+      <li class="breadcrumb-item active">Overview</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -103,6 +111,17 @@
 <li>This addon is always in an evolving stage to offer newer tools for workflows.</li>
 <li>Developed by me, I work as a freelance Vehicle Artist, trying to adapt to my different clients, and I find different things to impprove with each encounter.</li>
 </ol>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="download-and-installation">Download and Installation</h3>
+<p>Install from our github or gumroad, gumroad is helpful just in case you wanna be notified of new releases. </p>
+<ul>
+<li><a href="https://github.com/deepdesperate">Github</a></li>
+<li><a href="https://namandeep.gumroad.com/">Gumroad</a></li>
+</ul>
+<!-- Add Information about installing in Blender 4.2 -->
+
+<p>After downloading, the addon can be installed by going to <strong>File &gt; User Preferences &gt; addons.</strong> Click at Install from FIle and specify the object_renamer.py file in the newly opened window. Object Renamer should now appear in your addons window and can be activated. 
+Please contact me in case you run into any issues.</p>
 <h2 id="feature-overview">Feature Overview</h2>
 <ul>
 <li><code>Object Rename</code> operator that can rename objects based on the active object, like active_object_LP, active_object_HP with option to move the suffix objects to their defined collections</li>
@@ -139,19 +158,12 @@
 <li><strong>UV-Tools</strong> UV Tools to help check whether every Baking objects has their Mirror/Array modifiers have offset, so they don't bake artifacts by mistake due to inverted mesh overlapping.</li>
 <li>At the end of the day, we want to work on our projects/task, with minimum bugs, export and baking mesh just to find out that one mesh wasn't named properly or somehow that one didn't have UV offset, that cycle can go repeatedly and in a game-dev environment can be frustrating.</li>
 </ul>
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="download-and-installation">Download and Installation</h3>
-<p>Install from our github or gumroad, gumroad is helpful just in case you wanna be notified of new releases. </p>
-<ul>
-<li><a href="https://github.com/deepdesperate">Github</a></li>
-<li><a href="https://namandeep.gumroad.com/">Gumroad</a></li>
-</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../test/" class="btn btn-neutral float-right" title="Test">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../obre_UI/" class="btn btn-neutral float-right" title="UI">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -177,7 +189,7 @@
       <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../test/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../obre_UI/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
