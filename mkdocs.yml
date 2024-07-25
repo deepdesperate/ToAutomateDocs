@@ -4,8 +4,9 @@ nav:
   - Object Renamer: 
     - Overview: object_renamer.md
     - UI: obre_UI.md
-    - Renamer: obre_op_renamer.md
+    - Rename Tool: obre_op_renamer.md
     - Collection Organizer: obre_op_colOrganize.md
+    - Miscellaneous Tools: obre_op_misc.md
   - Test: test.md
   - About: about.md
 theme: readthedocs
