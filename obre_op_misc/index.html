@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Rename Tool - Object Renamer</title>
+    <title>Miscellaneous Tools - Object Renamer</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Rename Tool";
-        var mkdocs_page_input_path = "obre_op_renamer.md";
+        var mkdocs_page_name = "Miscellaneous Tools";
+        var mkdocs_page_input_path = "obre_op_misc.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -49,29 +49,25 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../obre_UI/">UI</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Rename Tool</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_renamer/">Rename Tool</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_colOrganize/">Collection Organizer</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Miscellaneous Tools</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#rename-low-high-poly-objects-appropriately">Rename Low &amp; High Poly Objects Appropriately</a>
+    <li class="toctree-l2"><a class="reference internal" href="#move-suffix-object">Move Suffix Object</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#properties">Properties:</a>
-    </li>
     <li class="toctree-l3"><a class="reference internal" href="#usage">Usage:</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#selection-menu">Selection Menu</a>
+    <li class="toctree-l2"><a class="reference internal" href="#link-and-unlink-menu">Link and Unlink Menu</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#options">Options</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#usage_1">Usage</a>
+    <li class="toctree-l3"><a class="reference internal" href="#usage_1">Usage:</a>
     </li>
         </ul>
     </li>
     </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_colOrganize/">Collection Organizer</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_misc/">Miscellaneous Tools</a>
                   </li>
               </ul>
               <ul>
@@ -97,7 +93,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Object Renamer</li>
-      <li class="breadcrumb-item active">Rename Tool</li>
+      <li class="breadcrumb-item active">Miscellaneous Tools</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -106,40 +102,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="renamer-operator">Renamer Operator</h1>
-<h3 id="rename-low-high-poly-objects-appropriately">Rename Low &amp; High Poly Objects Appropriately</h3>
-<p><img alt="Renamer UI" src="../assets/images/Ovw_Rename.jpg" /></p>
-<h4 id="properties">Properties:</h4>
+                <h1 id="object-renamer-tools">Object Renamer Tools</h1>
+<p><img alt="Miscellaneous UI" src="../assets/images/Ovw_Rename_misc.jpg" /> </p>
+<h3 id="move-suffix-object">Move Suffix Object</h3>
 <ol>
-<li><code>LP_Suffix</code>: Set suffix that will be added to the Low Poly Object</li>
-<li><code>HP_Suffix</code>: Set suffix that will be added to the High Poly Object</li>
-<li><code>LP Collection</code>: Set name for the Low poly collection to hold LP Objects</li>
-<li><code>HP Collection</code>: Set name for the Low poly collection to hold HP Objects</li>
-<li><code>Rename</code>: Rename Button to run the algorithm and rename object</li>
+<li>Move selected objects or scene objects with specific <code>suffix</code> to target location.</li>
+<li>Option to select the suffix object in scene.</li>
 </ol>
 <h4 id="usage">Usage:</h4>
 <ol>
-<li>Select two objects <code>active_object</code> and <code>second_object</code>, when the algorithm runs, it will rename the <code>active_object</code> and add LP suffix to it. And adds the HP suffix to the non-active object.</li>
-<li>If you have toggled the <code>Move to Collection</code> property to <code>ON</code>. It will move the respective object with the respective name to the respective Collection.</li>
-<li>For example, if you had LP prefix as <code>_LP</code>, and HP prefix as <code>_HP</code>, and name will become: <code>my_obj_name__LP</code> and <code>my_obj_name_HP</code> for HP, and they will be moved to the <code>LP</code> and <code>HP</code> Collection respectively.</li>
+<li>Simply select the options you want, either <code>Only Selected</code> or not. This make sure only selected objects are checked for suffix and then those to move to the new collection.</li>
 </ol>
-<h3 id="selection-menu">Selection Menu</h3>
-<p><strong>Requirements</strong>: Works with the collections and Suffix of the Rename operators. Like LP &amp; HP suffix and LP &amp; HP Collection Names.</p>
-<h4 id="options">Options</h4>
+<h3 id="link-and-unlink-menu">Link and Unlink Menu</h3>
 <ol>
-<li><code>Select non-matching object</code>: Search for objects that doesn't have matching counterparts in the opposite collection. Like finding if no HP object of <code>abc_LP</code>   </li>
-<li><code>Select significant other</code>: Selects the HP object of selected LP objects or vice versa. Helpful when needed to select counter object of selected objects.</li>
+<li><code>Linker</code> Menu helps object link to different collections instead of moving to another collection.</li>
+<li><code>Object</code> becomes habitant of new <code>collection</code> along with it's <code>previous</code> parent <code>Collection</code>.</li>
 </ol>
-<h4 id="usage_1">Usage</h4>
+<h4 id="usage_1">Usage:</h4>
 <ol>
-<li>Select any number of object with either <code>LP</code> or <code>HP</code> prefix or both, then press <code>Select</code> what it does is, checks for the <code>non-matching</code> or <code>significant other</code> in the counter collections <code>LP_Collection/HP_Collection</code>. If found it selects the objects and make them active.</li>
+<li>Select the object/s to link/unlink to the collection.</li>
+<li>Press the Collection icon in Link menu to select the desired target collection.</li>
+<li>Press link/unlink to perform the operation.</li>
+</ol>
+<p><strong><em>Note</em></strong></p>
+<ol>
+<li>If an object lives in only one collection. And if tried to perform an unlink from that collection, it won't work.</li>
+<li>If you need to perform this, simply delete the object.</li>
 </ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../obre_UI/" class="btn btn-neutral float-left" title="UI"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../obre_op_colOrganize/" class="btn btn-neutral float-right" title="Collection Organizer">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../obre_op_colOrganize/" class="btn btn-neutral float-left" title="Collection Organizer"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../test/" class="btn btn-neutral float-right" title="Test">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -162,10 +157,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../obre_UI/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../obre_op_colOrganize/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../obre_op_colOrganize/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../test/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
