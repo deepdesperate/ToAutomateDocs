@@ -2,11 +2,11 @@
 The ToAutomate UI is located in the Properties(Press N) Panel of the 3D-View.
 
 ## Side Panel
-<img src= "/assets/images/ToAutomate_Main.png", width="600"> <br>
+<img src= "../assets/images/ToAutomate_Main.png", width="600"> <br>
 Located in the Properties Panel of 3D View, Tap `To Automate` to get started and you'll see following tool menus.
 
 ## 3D Object Tools
-<img src= "/assets/images/3D_Tools.png", width="300"> <br>
+<img src= "../assets/images/3D_Tools.png", width="300"> <br>
 
 1. **Rename**: Select Two Object and press `Rename`, It Renames the active Object and add '_LP' suffix to it and '_HP' suffix to the other selected object
     1. Rename Operator requires two selected object to make a Low-High Object named Pair
@@ -30,7 +30,7 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
     3. `Organize`: Press Organize and convert your Collection Heirarchy into empty-parent heirarchy
 
 ## Mesh Menu
-<img src= "/assets/images/Mesh_Operators.png", width="300"> <br>
+<img src= "../assets/images/Mesh_Operators.png", width="300"> <br>
 
 1. **Modifiers**:
     1. Overview: Applies the following Modifiers to all selected objects.
@@ -56,10 +56,10 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
 
 
 ## UV Menu
-<img src= "/assets/images/UV_Operators.png", width="300"> <br>
+<img src= "../assets/images/UV_Operators.png", width="300"> <br>
 
 ## Export Menu
-<img src= "/assets/images/Export_System_Closed.png", width="300", style="vertical-align: top;">
-<img src= "/assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;>
+<img src= "../assets/images/Export_System_Closed.png", width="300", style="vertical-align: top;">
+<img src= "../assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;>
 
 

@@ -1,5 +1,15 @@
 markdown_extensions:
   - sane_lists
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - search.highlight
+    - header.autohide
+
 site_name: To Automate
 nav:
   - Home: index.md
@@ -10,7 +20,5 @@ nav:
     - Mesh Tools: TAMT_op_MeshTools.md
     - UV Tools: TAMT_op_UVTools.md
     - Export Tools: TAMT_op_EXPTools.md
-  - Test: test.md
-  - About: about.md
-theme: readthedocs
+ 
 
