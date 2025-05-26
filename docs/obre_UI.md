@@ -1,3 +1,0 @@
-# UI
-
-## The Side Panel

@@ -1,12 +1,15 @@
-site_name: Object Renamer
+markdown_extensions:
+  - sane_lists
+site_name: To Automate
 nav:
   - Home: index.md
-  - Object Renamer: 
-    - Overview: object_renamer.md
-    - UI: obre_UI.md
-    - Rename Tool: obre_op_renamer.md
-    - Collection Organizer: obre_op_colOrganize.md
-    - Miscellaneous Tools: obre_op_misc.md
+  - ToAutomate: 
+    - Overview: Toautomate_Intro.md
+    - User Interface: TAMT_UI.md
+    - Object & Scene Tools: TAMT_op_3DTools.md
+    - Mesh Tools: TAMT_op_MeshTools.md
+    - UV Tools: TAMT_op_UVTools.md
+    - Export Tools: TAMT_op_EXPTools.md
   - Test: test.md
   - About: about.md
 theme: readthedocs
