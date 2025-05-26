@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Rename Tool - Object Renamer</title>
+    <title>Object & Scene Tools - To Automate</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Rename Tool";
-        var mkdocs_page_input_path = "obre_op_renamer.md";
+        var mkdocs_page_name = "Object \u0026 Scene Tools";
+        var mkdocs_page_input_path = "TAMT_op_3DTools.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -30,7 +30,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Object Renamer
+          <a href=".." class="icon icon-home"> To Automate
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -43,13 +43,13 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Object Renamer</span></p>
+              <p class="caption"><span class="caption-text">ToAutomate</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../object_renamer/">Overview</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Toautomate_Intro/">Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../obre_UI/">UI</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_UI/">User Interface</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Rename Tool</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Object & Scene Tools</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#rename-low-high-poly-objects-appropriately">Rename Low &amp; High Poly Objects Appropriately</a>
         <ul>
@@ -67,11 +67,25 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#collection-organizer">Collection Organizer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ui-overview">UI Overview</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#collection-de-organizer">Collection De-Organizer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#ui-overview_1">UI Overview</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_colOrganize/">Collection Organizer</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_op_MeshTools/">Mesh Tools</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../obre_op_misc/">Miscellaneous Tools</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_op_UVTools/">UV Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_op_EXPTools/">Export Tools</a>
                   </li>
               </ul>
               <ul>
@@ -89,15 +103,15 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Object Renamer</a>
+          <a href="..">To Automate</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Object Renamer</li>
-      <li class="breadcrumb-item active">Rename Tool</li>
+          <li class="breadcrumb-item">ToAutomate</li>
+      <li class="breadcrumb-item active">Object & Scene Tools</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -106,9 +120,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="renamer-operator">Renamer Operator</h1>
+                <h1 id="object-scene-operator">Object Scene Operator</h1>
 <h3 id="rename-low-high-poly-objects-appropriately">Rename Low &amp; High Poly Objects Appropriately</h3>
-<p><img alt="Renamer UI" src="../assets/images/Ovw_Rename.jpg" /></p>
+<!-- ![Renamer UI](assets/images/Ovw_Rename.jpg) -->
+<p><img src="/assets/images/Ovw_Rename.jpg" width=400></p>
 <h4 id="properties">Properties:</h4>
 <ol>
 <li><code>LP_Suffix</code>: Set suffix that will be added to the Low Poly Object</li>
@@ -134,12 +149,34 @@
 <ol>
 <li>Select any number of object with either <code>LP</code> or <code>HP</code> prefix or both, then press <code>Select</code> what it does is, checks for the <code>non-matching</code> or <code>significant other</code> in the counter collections <code>LP_Collection/HP_Collection</code>. If found it selects the objects and make them active.</li>
 </ol>
+<h3 id="collection-organizer">Collection Organizer</h3>
+<p>Collection Organizer helps in organizing blender collection heirarchy and converts it into heirarchy of empty_parents, that is helpful for working/exporting objects to Unity and other empty_based heirarchy softwares.</p>
+<p><img alt="Renamer UI" src="../assets/images/Ovw_colOrganize.jpg" /></p>
+<h4 id="ui-overview">UI Overview</h4>
+<ol>
+<li><code>Master Parent?</code>: Option to create an extra parent object over the final heirarchy.</li>
+<li><code>Name for Master</code>: By default <code>ROOT</code>, name for the top parent object. Needs <code>Master Parent</code> to be <code>ON</code>.</li>
+<li><code>Organize Button</code>: Button to convert current view_layers collection heirarchy and make their objects child of empty object of the collection they live in.</li>
+</ol>
+<p><strong>Note:</strong> 
+All the empty objects will follow the heirarchy of the Collection tree of Blender Scene. So, if blender scene has multiple collection, instead of one base collection of tree.
+That will lead to creation of 3-different heirarchy.
+That's why there is an option to create an <code>Parent</code> object to make those 3 Empty object under one.</p>
+<h3 id="collection-de-organizer">Collection De-Organizer</h3>
+<p>Collection De-Organizer helps in deorganizing empty-object parent heirachy and converts them to Blender Collection system. You can choose to delete the empties after the heirarchy conversion or not.</p>
+<h4 id="ui-overview_1">UI Overview</h4>
+<ol>
+<li><code>Root Coll?</code>: Option to create an extra parent collection over the final collection heirarchy.</li>
+<li><code>Name for Parent Collection</code>: Name for the parent collection of the heirarcy, needs <code>Root Col</code> option to be enabled.</li>
+<li><code>Delete Empties</code>: Option to delete the empties after the conversion of empty-object heirarchy to Blender Collections.</li>
+<li><code>Reset Collections</code>: Button to deorganize the empty-object heirarchy and convert it to Blender Collection.</li>
+</ol>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../obre_UI/" class="btn btn-neutral float-left" title="UI"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../obre_op_colOrganize/" class="btn btn-neutral float-right" title="Collection Organizer">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../TAMT_UI/" class="btn btn-neutral float-left" title="User Interface"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../TAMT_op_MeshTools/" class="btn btn-neutral float-right" title="Mesh Tools">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -162,10 +199,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../obre_UI/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../TAMT_UI/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../obre_op_colOrganize/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../TAMT_op_MeshTools/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

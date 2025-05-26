@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>User Interface - To Automate</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "User Interface";
+        var mkdocs_page_input_path = "TAMT_UI.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> To Automate
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">ToAutomate</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Toautomate_Intro/">Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">User Interface</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#side-panel">Side Panel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3d-object-tools">3D Object Tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mesh-menu">Mesh Menu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uv-menu">UV Menu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#export-menu">Export Menu</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_op_3DTools/">Object & Scene Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_op_MeshTools/">Mesh Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_op_UVTools/">UV Tools</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../TAMT_op_EXPTools/">Export Tools</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../test/">Test</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">To Automate</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">ToAutomate</li>
+      <li class="breadcrumb-item active">User Interface</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="user-interface">User Interface</h1>
+<p>The ToAutomate UI is located in the Properties(Press N) Panel of the 3D-View.</p>
+<h2 id="side-panel">Side Panel</h2>
+<p><img src= "/assets/images/ToAutomate_Main.png", width="600"> <br>
+Located in the Properties Panel of 3D View, Tap <code>To Automate</code> to get started and you'll see following tool menus.</p>
+<h2 id="3d-object-tools">3D Object Tools</h2>
+<p><img src= "/assets/images/3D_Tools.png", width="300"> <br></p>
+<ol>
+<li>
+<p><strong>Rename</strong>: Select Two Object and press <code>Rename</code>, It Renames the active Object and add '_LP' suffix to it and '_HP' suffix to the other selected object</p>
+<ol>
+<li>Rename Operator requires two selected object to make a Low-High Object named Pair</li>
+<li>On Press of Rename, the active Object (named "Cube") get renamed to Cube + "_LP" (<code>Low Suffix</code>) and second selected object get renamed Cube + "_HP" (High Suffix)</li>
+<li>Resulting name of active_object becomes from "Cube" to "Cube_LP"<br>
+    and for <code>second</code> selected object "Cube_HP", <br>High_name = Low_object_name + high_suffix</li>
+</ol>
+</li>
+<li>
+<p><strong>Object Organize Method</strong></p>
+<ol>
+<li>Method to Organize: <ol>
+<li><code>OP1</code>: Separate Low-High:  When pressed Rename, Moves the Low and High suffix objects to the individual <code>Low_Col</code> and <code>High_Col</code> Collections respectively.<br> Toggle the <code>Check</code> in front of LP Col and HP Col to disable moving to collection.</li>
+<li><code>OP2</code>: Object Collection: When pressed Rename, Moves both the Low and High suffixed objects to a new <code>Object's name</code> Collection. <br> <strong>Example:</strong> Resulting <code>"Cube_LP"</code> and <code>"Cube_HP"</code> Objects will both be in Collection <code>"Cube"</code>.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Selection Menu</strong>:</p>
+<ol>
+<li><code>OP1</code>: To Check if an object's counterpart (Low or high) exists.</li>
+<li><code>OP2</code>: To Check if any object doesn't have it's Counterpart (Low or high) and select them.</li>
+<li><code>Note</code>: Works with respect to defined/named LP Col and HP Col in Organize Method </li>
+</ol>
+</li>
+<li>
+<p><strong>Collection Organizer</strong>: Converts the Blender's Collection Heirarchy to Empty object-parent collection for the collection tree, Helpful when want to preserve heirarchy for .fbx or other 3D softwares.</p>
+<ol>
+<li><code>Source Col</code>: Select a Source Collection to Convert to Empty-object Parent heirarchy.</li>
+<li><code>Parent</code>: Toggle Parent if we want an external Empty-Object that will go on top of the Final src Collection object.<ol start="3">
+<li><code>Name</code>: Give a name for the External Parent Object, If doesn't exist, will create it</li>
+</ol>
+</li>
+<li><code>Organize</code>: Press Organize and convert your Collection Heirarchy into empty-parent heirarchy</li>
+</ol>
+</li>
+</ol>
+<h2 id="mesh-menu">Mesh Menu</h2>
+<p><img src= "/assets/images/Mesh_Operators.png", width="300"> <br></p>
+<ol>
+<li><strong>Modifiers</strong>:<ol>
+<li>Overview: Applies the following Modifiers to all selected objects.</li>
+<li><code>Create New</code>: If the object already have selected modifier, It'll create an additional new modifier. Helpful when need multiple Mirror Modifiers.</li>
+<li><code>TRIANGULATE</code>: Apply to all objects, keeps mesh clean to edit and prepared for export and baking. <br>
+Adds a triangulate modifier, with <code>keep normals</code> toggled <code>On</code> (Helpful in keeping normals consistent).</li>
+<li><code>MIRROR</code>: Adds a Mirror Modifier to selected object, with some additional properties as a pop up menu.<ol>
+<li>Opens an Additional Dialogue menu to select the Mirror Origin (A symmetry Object in world center). Or to Select axis for the mirror.</li>
+<li>Applies to all selected objects</li>
+</ol>
+</li>
+<li><code>Dynamic Array</code>: It's not normal array, it needs two objects specifically. What it does basically is: <ol>
+<li><code>Requirements</code>: The active object and a second selected object</li>
+<li>Dynamic Array calculates the 3D Distance between both objects and adds an array to active object that makes it's Array distance to the calculated distance above.</li>
+<li><code>Weighted Normal</code>: Adds Weighted Normal to all the selected objects.</li>
+<li><code>SHIFT UV</code>: Helpful for Mirrors and Arrays, When in game object baking, having mirror for each object, can result in Overlap UVs, so enable SHIFT_UV, and select U or V or both to shift the Mirrored-part's UV out of 1:1 to avoid overlap in main baking region.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Materials</strong><ol>
+<li><code>Material</code>: Select a Material from Scene</li>
+<li><code>Delete Old Material</code>: Toggle ON to remove old materials of an object, when adding material from below.</li>
+<li><code>Add Material</code>: Adds selected Material in <code>Material</code> to all selected objects.<ol>
+<li>If no <code>Material</code> was selected, a pop-up will come up that asks for a name for the New Material to add to the objects.</li>
+</ol>
+</li>
+<li><code>Del Materials</code>: Deletes all Materials of all selected Objects. Everything</li>
+<li><code>Clean UP</code>: Removes Unused Materials from selected Objects.</li>
+</ol>
+</li>
+</ol>
+<h2 id="uv-menu">UV Menu</h2>
+<p><img src= "/assets/images/UV_Operators.png", width="300"> <br></p>
+<h2 id="export-menu">Export Menu</h2>
+<p><img src= "/assets/images/Export_System_Closed.png", width="300", style="vertical-align: top;">
+<img src= "/assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Toautomate_Intro/" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../TAMT_op_3DTools/" class="btn btn-neutral float-right" title="Object & Scene Tools">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Toautomate_Intro/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../TAMT_op_3DTools/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
