@@ -1,61 +1,30 @@
-# Haec nuper quercum aegida sidus trucis
 
-## Distinctas suis
+# About Me
 
-Lorem markdownum coniunx felix dolosas detexisse auguris quisquis; videtur menso
-[experientia](http://canos-di.io/boreasveros). Neque conripiantque esse
-contigerant nulli; ille es mortali Thermodonque sulcat solio cedere has vidit;
-est tremulo seroque. Nec [invasit est committitur](http://sub.io/herse-qui.html)
-bracchia inquirit auceps deo mulcet adulterium extimuit nobis.
+<div style="display: flex; align-items: center;">
+    <div style="flex: 1;" >
+        Greetings,<br>
+        I am Naman Deep, a freelance 3D generalist specialized in 3D Vehicles and part-time programmer from Delhi, India. Initially I wandered in 3D for years learning mutliple workflows of different field from modelling to 3D rendering, and the stuff in the middle too. I decided to hone my skills in game-industry with focus to Vehicles. My recent professional projects include the BeamNG *Hirochi-Aurata* UTV vehice, BeamNG trailers, Cement Mixer. Other Car projects for Leartes Studios and QORPO.
+        Apart from my professional work, I love to do programming on the side that helps me with problem-solving in different scenarios. 
+        I originally started with C++. But for scripting I learned python. I got started in blender script development after I had a small idea of renaming two objects using blender-script.
+        I had gotten a simple addon skeleton to start my tools development. My Object renamer(now **ToAutomate**) is here for everyone.
+        
+    </div>
+    <div style="flex: 0 0 auto; margin-left: 20px;">
+        <img src ="../assets/images/Profile.png" alt = "Profile" style="width: 200px; height: auto; vertical-align: top;">
+    </div>
+</div>
 
-    hit.udpFsb += gigabit(design, netbios_sd_buffer);
-    double.heuristic_definition_modifier /= overclocking_xslt + desktop_path(5)
-            + web_rt.yahoo_leak_overclocking(3, certificateHsf(nanometer_multi,
-            batch_page), desktop_mountain);
-    if (2) {
-        zebibyte -= wysiwygHalfExploit;
-    } else {
-        cookie_access *= dramVideoVpn - dvd_shell_codec;
-    }
-    file += half_http_executable + logic.bankruptcyToslink(duplex + kerning, 95,
-            ring);
-    if (rdram_wireless_baseband.click_file_application(flash) +
-            gigabyte_rootkit_token.spoofingWheelRdram(realIcon) + megabyte(
-            raidTargetDisk) + surface_horse) {
-        controllerTokenSystray(-4 - pum);
-    }
 
-Sim restat nec locis **vulnere**, non repertum, et incubuit taurum. Dixit
-*sono*, iam, tot iuncta, corpore in Aiacis radice leve meliore caveo! Tacto
-addiderat morti superi vobisque cornibus dixi. Est letum latere femina et tauri
-vicimus obstitit matrem fallaciter *rogat promissas* latentia arces tulit
-conataque.
 
-## Harenam tamen in tyranni fuerat corripuere velit
+In my day to day work, I note down things which I can further improve and workflows that needs some automation. I want the artist to create and let the scripts and addons do the heavy-lifting to organizing, managing collection heirarchy and export system. I am still trying to find users for my script. So if someone is reading this, I am really thankful. Hope it helped you in some way.
 
-Tremulasque *iunctior mulcebunt* praecipue **ipso**, non hoc inde horrendus
-Ceae. Ire manu et corpora paene formae et flammae gravem vultusque officio,
-galeamque. Praereptae Phrygiae simulacraque ponti cultoribus victa.
 
-> Reor *annus* preces peteretur: blanda hic iussos candentia sibila supereminet
-> illo animae contraxit celeri deque malis cavis.
-> [Frena](http://anigrus-et.io/servatusquepotitur) Hiberi urbem proles tenet in
-> Cytoriaco dea sed habet quinta est. Aut urbem, vox excivere et numen
-> incunabula natusque ille *me* pigetque crimen. Tum ex gemina naides deserere
-> populique quod dignos volat; vir Aegaeona legebant oraque: quaeris verbis tibi
-> ambo. Est petit insignia Hippolytus suspendit honesta contingere tenet erat:
-> militiam esse, cum [tamen mea](http://contraque-vultum.com/) pepercit
-> fumantia.
+## Portfolio
 
-Contorto memorem argenti. Illinc sorore tamquam discede reor altera deieci. Cum
-cava ficti [ferat](http://duxerat.net/in.aspx).
+* [Artstation](https://www.artstation.com/naman)
+* [Sketchfab](https://sketchfab.com/namandeep444)
 
-Et precibus in illas [solidae vocant
-caecis](http://pro-achille.net/exiguoquod.php) aut uterque pondera **exerces
-intravimus**, tamen, lux formam. Nec portarum ventoque,
-[post](http://vertitur-tetigit.net/memorlinquit.aspx) temptarunt, cur magni
-pectora, Circe contingere [columbas viae](http://www.quique.net/) non
-[aer](http://creatus.net/). Mitte namque, dum ac veniam pennatis sororis
-**dant**; est enim extimuit! Crinem pecudesque tecta lacrimas fusus se [ora dei
-credideris](http://www.loca-totidem.net/vitibusmutum) vittisconcutiens glandes
-Atalanta diurnis decimo Neoptolemum fuit pendebant aetas in haec.
+## Addon Links
+* [Github](https://github.com/deepdesperate)
+* [Gumroad](https://namandeep.gumroad.com/)

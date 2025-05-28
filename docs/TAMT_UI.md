@@ -60,6 +60,6 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
 
 ## Export Menu
 <img src= "../assets/images/Export_System_Closed.png", width="300", style="vertical-align: top;">
-<img src= "../assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;>
+<img src= "../assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;">
 
 

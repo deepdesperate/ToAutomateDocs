@@ -12,13 +12,15 @@ theme:
 
 site_name: To Automate
 nav:
-  - Home: index.md
   - ToAutomate: 
-    - Overview: Toautomate_Intro.md
+    - Overview: index.md
     - User Interface: TAMT_UI.md
     - Object & Scene Tools: TAMT_op_3DTools.md
     - Mesh Tools: TAMT_op_MeshTools.md
     - UV Tools: TAMT_op_UVTools.md
     - Export Tools: TAMT_op_EXPTools.md
+  - About: about.md
+
+  
  
 
