@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.6.14">
     
     
       
@@ -403,9 +403,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#export-menu" class="md-nav__link">
+  <a href="#collectionexport-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      Export Menu
+      CollectionExport Menu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Details:
     </span>
   </a>
   
@@ -640,9 +649,135 @@ Adds a triangulate modifier, with <code>keep normals</code> toggled <code>On</co
 </ol>
 <h2 id="uv-menu">UV Menu</h2>
 <p><img src= "../assets/images/UV_Operators.png", width="300"> <br></p>
-<h2 id="export-menu">Export Menu</h2>
+<ol>
+<li><strong>UV PRE-CHECK</strong>: Precheck UV Offset for all selected objects<ol>
+<li>Precheck helps to Check <code>UV Offset</code> value in Modifiers of Object. Specifically <code>Array</code> and <code>Mirror's</code> UV Offset.<ol>
+<li>If an object's modifier has both U and V are 0. It could lead to UV overlap, so the object is selected.</li>
+</ol>
+</li>
+<li><code>Add UV Offset</code> Adds UV Offset to U or V, for the modifiers in an object (<code>Array</code> and <code>Mirror</code>).</li>
+<li>Split-Island Check is a wip operator, that helps select islands that are split in UV Map, let's say an island had 3 or 4. faces, but somehow accidentally, we moved one island separate, this could lead to some little bug in UV. So it selects those parts in the UV. Helpful to open a UV-Editor tab on right of 3D-View.</li>
+</ol>
+</li>
+<li>
+<p><strong>UV HELP MENU</strong>: Helps in some quick setting Seam operations</p>
+<ol>
+<li><code>Mark Sharp Seam</code>: Marks sharp edges of an object to seams.</li>
+<li><code>Mark Boundary Seams</code>: Of the selected faces, the overall boundaries will be marked as seam.</li>
+</ol>
+</li>
+<li>
+<p><strong>Create UVMap</strong>: Create UVMap for all selected objects</p>
+<ol>
+<li><code>Name</code>: Name for the UVMap</li>
+<li><code>Make Active</code>: Toggle <code>ON</code> or <code>OFF</code>: If <code>ON</code>, makes the UVMap of the name as active.</li>
+<li><code>Create UVMap</code>: Createas a UVMap to all selected objects of the given name, if already exists in an object, Makes it active( Considering <code>Make Active</code> is <code>ON</code>)</li>
+</ol>
+</li>
+<li>
+<p><strong>Rename UVMap</strong>: Renames the UVMap, Select Option for renaming method.</p>
+<ol>
+<li>Rename Option:<ol>
+<li><code>Rename Active</code>: Renames the active UVMap of selected object(s).</li>
+<li><code>Find and Rename</code>: Finds UVMap of provided <code>find</code> name and renames it as <code>replace</code> name.<ol>
+<li><code>Find Name</code>: Find name to search in the UVMap list.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><code>UV Name</code>: UVMap Name for the final UVMap.</li>
+<li><code>Rename UVMap</code>: Operator to do the rename action.</li>
+</ol>
+</li>
+<li><strong>Delete UVMap</strong>: Deletes the UVMap, Selection option for Deleting Method:<ol>
+<li>Delete Option: <ol>
+<li><code>Active UV</code>: Deletes the Active UVMap of the selected object(s).</li>
+<li><code>UV Named as</code>: Deletes the UVMap with the given name in the name field.</li>
+</ol>
+</li>
+<li><code>Delete UVMap</code>: Operator to delete the UVMap(s).</li>
+</ol>
+</li>
+</ol>
+<h2 id="collectionexport-menu">CollectionExport Menu</h2>
 <p><img src= "../assets/images/Export_System_Closed.png", width="300", style="vertical-align: top;">
 <img src= "../assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;"></p>
+<h2 id="details"><strong>Details</strong>:</h2>
+<ol>
+<li><strong>Preset Menu Overview</strong>:<ol>
+<li><code>Preset</code>: Select the Preset from the Presets Menu.</li>
+<li><code>Export</code>: If a Preset is selected, Exports the resulting file. (Read below for more details)</li>
+<li><code>Add Preset</code>: Adds a new preset for Export.</li>
+<li><code>Delete Preset</code>: Deletes the active preset of Export menu</li>
+</ol>
+</li>
+<li>
+<p><strong>Preset Properties</strong>:</p>
+<ol>
+<li><code>Preset Name</code>: Rename the Current/Active Preset</li>
+<li><code>Export Type:</code>: Source for the objects/Collections to export<ol>
+<li><code>Collection Objects</code>: Export the Collection Objects, select Collection in Export Collection Selection Menu.</li>
+<li><code>Selected Objects</code>: Exports the selected objects.</li>
+</ol>
+</li>
+<li><code>File Name</code>: Options for name of the Export file.<ol>
+<li><code>Project File name</code>: Export the resulting file as <code>Blend_file_name.fbx</code>, Condition being Blend file must be saved in a directory.</li>
+<li><code>Custom File Name</code>: Brings out a name field for the export file name.<ol>
+<li><code>File Name</code>: Provide the file name for the export file. (Don't leave empty)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><code>Export as</code>: Option to select the file extensions or format of file.<ol>
+<li><code>FBX Export</code>: Makes the final export file as 'My_object.fbx'</li>
+<li><code>USDz Export</code>: <code>(NOT IMPLEMENTED)</code> Makes the final export file as 'My_object.usdz'</li>
+</ol>
+</li>
+<li><code>Export Path</code>: click the folder button to select a directory to export file in, or put the directory in yourself.</li>
+<li><code>Substance File?</code>: Click to Toggle <code>ON</code> or <code>OFF</code>: <ol>
+<li>If <code>OFF</code>: No Extra files apart from mesh file.</li>
+<li>If <code>ON</code>: Creates a Substance Project with the mesh file.<ol>
+<li><code>Substance Menu</code>:<ol>
+<li><code>Diff Name</code>: If ON: asks for a name for Substance File, Else, uses the object file name above.</li>
+<li><code>Spp Path</code>: File Path for Substance file to be saved in.</li>
+<li><code>Tex Path</code>: Textures Export Path for Substance File.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><code>Use File Directory</code>: Saves the file in the File Directory instead of external path provided.</li>
+<li><code>Export Frame</code>: Default 0, if changed to let's 10. The final objects/collections will be exported at that timeline frame, Helpful if needed objects at specified frame maybe cuz of required Translation of objects at that frame.</li>
+</ol>
+</li>
+<li>
+<p><strong>Export Collection Selection</strong>: Select Collection(s) to include/exclude in export file when <code>Collection Objects</code> is selected in Export Type.</p>
+<ol>
+<li>Toggle <code>Include Collection</code>: Toggle the collection selection that needs to be included in the final export collections</li>
+<li>Toggle <code>Exclude Collection</code>: Toggles the Collection selection that needs to be excluded in the final export Collections.<ol>
+<li>Example: We include a top collection named <code>Parent</code>, which has 5 child collections, but we only want to export only 4 collections, There are two methods, either select all 4 childen in Include collection, Or <br>
+Select the unwanted collection in the Exclude Collection, the resulting collection will be free of excluded collections.</li>
+</ol>
+</li>
+<li>
+<p><code>Add Collection</code>: Adds the selection Collection (in the outliner) to list of either <code>Included Collections</code> or <code>Excluded Collections</code> whichever option is selected.</p>
+<ol>
+<li><code>Note</code>: Add any top-level collection to include and all it's sub-collections or sub-sub collections ... all collections will be exported.</li>
+<li><code>Note 2</code>: If wants to exclude some children or sub collection, select exclude collection and from the Collection tree, it will excluded when Exporting Collection Heirarchy.</li>
+</ol>
+</li>
+<li>
+<p><code>EDIT Collections</code>: Toggle <code>ON</code> to edit Collections list or <code>OFF</code> to avoid removing any collection by mistake.</p>
+</li>
+<li><code>INCLUDED Collections</code> or <code>EXCLUDED Collections</code>:<ol>
+<li>Shows the Collection select Menu for Appropriate type of <code>Collection</code></li>
+<li>Add Collections here.</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
 
 
