@@ -3,7 +3,7 @@
 ### Rename Low & High Poly Objects Appropriately
 
 <!-- ![Renamer UI](assets/images/Ovw_Rename.jpg) -->
-<img src="/assets/images/Ovw_Rename.jpg" width=400>
+<img src="/assets/images/3D_Tools.png" width=300>
 
 
 #### Properties:

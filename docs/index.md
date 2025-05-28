@@ -55,7 +55,7 @@ Please contact me in case you run into any issues.
     1. `Export Menu`: Start by Pressing: `Add Preset` and change settings for your first export preset.
     
 
-## Why Object Renamer Tools?
+## Why ToAutomate?
 The tool is oriented towards production stages where efficiency/speed is appreciated. I can't force any of my workflows or tools to anyone. 
 But I am pretty sure, trying out these features for yourself can save a minute or two during each iteration of workflow and when iterating multiple times, it is a considerable amount of time.
 
