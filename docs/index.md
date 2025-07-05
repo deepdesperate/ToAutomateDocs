@@ -1,7 +1,15 @@
 # ToAutomate
 
-## Overview
+<img src= "../assets/images/EXP_Ops_1.png", width="250", style="vertical-align: top;">
+<img src= "../assets/images/3D_Ops.png", width="250", style="vertical-align: top;">
+<img src= "../assets/images/Mesh_Ops.png", width="250", style="vertical-align: top;">
+<img src= "../assets/images/UV_Ops.png", width="250", style="vertical-align: top;">
+
+
+
+## **Overview**
 ToAuotmate has a simple goal, to streamline and automate the repeating process of 3D production work.
+
 
 1. **ToAutomate** is a Blender addon aimed to optimize the **3D-Art** workflows in real production workflow.
 2. It is an ever-evolving addon which tackles various stages of production that could be optimized to simplify repetetive tasks and give artist freedom to focus more on creative work.
@@ -10,10 +18,11 @@ ToAuotmate has a simple goal, to streamline and automate the repeating process o
     b. Pre-bake mesh Check, Collection Organizer.<br>
     c. Add Modifier for group objects.<br>
     d. UV/UVMap tools.<br>
-    e. Export Collection with Different Presets**
+    e. Export Collection with Different Presets<br>
+        f. Preset for DIfferent file type (USD, FBX, OBJ etc)**
 5. Developed by me, I work as a freelance Vehicle Artist, trying to adapt to my different clients, I always strive to improve my workflows to set a modular workflow that fits everyone and hope to impprove the 3D workflow with each encounter.
 
-## Getting Started
+## **Getting Started**
 ### Download and Installation
 Install from our github or gumroad, gumroad is helpful just in case you wanna be notified of new releases. 
 
@@ -28,7 +37,7 @@ After downloading, the addon can be installed with following steps: <br>
 3. The addon should now appear in your addons list and can be activated. 
 Please contact me in case you run into any issues.
 
-## Feature Overview
+## **Feature Overview**
 1. 3D Object Operators: <br>
     <!-- <img src="/assets/images/3DMenu.png" width=200> -->
     1. `Renamer` Operator to convert to rename two objects as Low and High, with suffix
@@ -55,12 +64,13 @@ Please contact me in case you run into any issues.
     1. `Export Menu`: Start by Pressing: `Add Preset` and change settings for your first export preset.
     
 
-## Why ToAutomate?
-The tool is oriented towards production stages where efficiency/speed is appreciated. I can't force any of my workflows or tools to anyone. 
+## **Why ToAutomate?**
+The tool is oriented towards production stages where efficiency/speed is appreciated. Still, I can't force any of my workflows or tools to anyone. 
 But I am pretty sure, trying out these features for yourself can save a minute or two during each iteration of workflow and when iterating multiple times, it is a considerable amount of time.
 
 - Like finding which Low poly object doesn't have it's High Poly created or named wrongly in collection of `100` of objects or checking for multiple mesh of same `LP/HP` relationship.
 - Exporting Specific Collections for **Normal-Baking**, and different final mesh for **Exporting**.<br>
+    - Option to pre-define preset for Export settings for different types (FBX, USD, OBJ, DAE).
     - Option to exclude any child Collection from it's Parent Collection Export, 
     - just define a quick preset in Export Manager for the workflow and it will export the collection tree without you manually selecting each collection each time.
 - **UV-Tools** UV Tools to help check whether every Baking objects has their Mirror/Array modifiers have offset, so they don't bake artifacts by mistake due to inverted mesh overlapping.
