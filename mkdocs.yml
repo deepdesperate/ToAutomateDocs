@@ -1,5 +1,7 @@
 markdown_extensions:
   - sane_lists
+  - md_in_html
+  - attr_list
 theme:
   name: material
   features:
@@ -15,10 +17,11 @@ nav:
   - ToAutomate: 
     - Overview: index.md
     - User Interface: TAMT_UI.md
+    - Preferences: TAMT_preferences.md
     - Object & Scene Tools: TAMT_op_3DTools.md
-    - Mesh Tools: TAMT_op_MeshTools.md
-    - UV Tools: TAMT_op_UVTools.md
-    - Export Tools: TAMT_op_EXPTools.md
+    # - Mesh Tools: TAMT_op_MeshTools.md
+    # - UV Tools: TAMT_op_UVTools.md
+    # - Export Tools: TAMT_op_EXPTools.md
   - About: about.md
 
   

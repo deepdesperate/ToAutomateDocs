@@ -1,6 +1,6 @@
 # Object Renamer Tools
 
-![Miscellaneous UI](assets/images/Ovw_Rename_misc.jpg) 
+![Misce
 
 ### Move Suffix Object
 1. Move selected objects or scene objects with specific `suffix` to target location.

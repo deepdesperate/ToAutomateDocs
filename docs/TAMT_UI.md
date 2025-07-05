@@ -2,11 +2,13 @@
 The ToAutomate UI is located in the Properties(Press N) Panel of the 3D-View.
 
 ## Side Panel
-<img src= "../assets/images/ToAutomate_Main.png", width="600"> <br>
+<img src= "../assets/images/ToAutomate_SideBar.png", width="300"> <br>
 Located in the Properties Panel of 3D View, Tap `To Automate` to get started and you'll see following tool menus.
 
 ## 3D Object Tools
-<img src= "../assets/images/3D_Tools.png", width="300"> <br>
+<img src= "../assets/images/3D_Ops_p1.png", width="300"> 
+<img src= "../assets/images/3D_Ops_p2.png", width="300"> <br>
+
 
 1. **Rename**: Select Two Object and press `Rename`, It Renames the active Object and add '_LP' suffix to it and '_HP' suffix to the other selected object
     1. Rename Operator requires two selected object to make a Low-High Object named Pair
@@ -14,24 +16,34 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
     2. Resulting name of active_object becomes from "Cube" to "Cube_LP"<br>
         and for `second` selected object "Cube_HP", <br>High_name = Low_object_name + high_suffix
 
+
+
 2. **Object Organize Method**
-    1. Method to Organize: 
-        1. `OP1`: Separate Low-High:  When pressed Rename, Moves the Low and High suffix objects to the individual `Low_Col` and `High_Col` Collections respectively.<br> Toggle the `Check` in front of LP Col and HP Col to disable moving to collection.
-        2. `OP2`: Object Collection: When pressed Rename, Moves both the Low and High suffixed objects to a new `Object's name` Collection. <br> **Example:** Resulting `"Cube_LP"` and `"Cube_HP"` Objects will both be in Collection `"Cube"`.
-3. **Selection Menu**:
-    1. `OP1`: To Check if an object's counterpart (Low or high) exists.
-    2. `OP2`: To Check if any object doesn't have it's Counterpart (Low or high) and select them.
-    3. `Note`: Works with respect to defined/named LP Col and HP Col in Organize Method 
+    1. Method to Organize: <br>
+        1. <img src= "../assets/images/3D_Menu_1.png", width="300"> <br>
+        1. `OP1`: **Separate Low-High**:  When pressed Rename, Moves the Low and High suffix objects to the individual `Low_Col` and `High_Col` Collections respectively.<br> Toggle the `Check` in front of LP Col and HP Col to disable moving to collection.
+        2. `OP2` : **Object Collection**: When pressed Rename, Moves both the Low and High suffixed objects to a new `Object's name` Collection. <br> **Example:** Resulting `"Cube_LP"` and `"Cube_HP"` Objects will both be in Collection `"Cube"`.
 
-4. **Collection Organizer**: Converts the Blender's Collection Heirarchy to Empty object-parent collection for the collection tree, Helpful when want to preserve heirarchy for .fbx or other 3D softwares.
-    1. `Source Col`: Select a Source Collection to Convert to Empty-object Parent heirarchy.
-    2. `Parent`: Toggle Parent if we want an external Empty-Object that will go on top of the Final src Collection object.
-        3. `Name`: Give a name for the External Parent Object, If doesn't exist, will create it
-    3. `Organize`: Press Organize and convert your Collection Heirarchy into empty-parent heirarchy
+3. **Selection Menu**:<br>
+     <img src= "../assets/images/3D_Menu_2.png", width="300"> <br>
+    1. `OP1` , **`Non-matching Object`**: To Check if an object's counterpart (Low or high) exists.
+    2. `OP2` , **`Significant Other`**: To Check if any object doesn't have it's Counterpart (Low or high) and select them.<br>
+    3. **`Note`**: Works with respect to defined/named LP Col and HP Col in Organize Method  
 
+
+
+<img src= "../assets/images/3D_Ops_p2.png", style="float: right; margin-left: 1rem; width: 300px;"> 
+4. **Collection Organizer**: Converts the Blender's Collection Heirarchy to Empty object-parent collection for the collection tree, Helpful when want to preserve heirarchy for .fbx or other 3D softwares.<br>
+    1. `Source Col`: Select a Source Collection to Convert to Empty-object Parent heirarchy.<br>
+    2. `Parent`: Toggle Parent if we want an external Empty-Object that will go on top of the Final src Collection object.<br>
+        3. `Name`: Give a name for the External Parent Object, If doesn't exist, will create it<br>
+    3. `Organize`: Press Organize and convert your Collection Heirarchy into empty-parent heirarchy<br>
+
+<div style="clear: both;"></div>
+
+
+<img src= "../assets/images/Mesh_Ops.png", style="float: right; vertical-align: center;  margin-left: 1rem; width: 300px;"> 
 ## Mesh Menu
-<img src= "../assets/images/Mesh_Operators.png", width="300"> <br>
-
 1. **Modifiers**:
     1. Overview: Applies the following Modifiers to all selected objects.
     1. `Create New`: If the object already have selected modifier, It'll create an additional new modifier. Helpful when need multiple Mirror Modifiers.
@@ -51,12 +63,13 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
     3. `Add Material`: Adds selected Material in `Material` to all selected objects.
         1. If no `Material` was selected, a pop-up will come up that asks for a name for the New Material to add to the objects.
     4. `Del Materials`: Deletes all Materials of all selected Objects. Everything
-    4. `Clean UP`: Removes Unused Materials from selected Objects.
- 
+    5. `Clean UP`: Removes Unused Materials from selected Objects.
+
+<div style="clear: both;"></div>
 
 
 ## UV Menu
-<img src= "../assets/images/UV_Operators.png", width="300"> <br>
+<img src= "../assets/images/UV_Ops.png", width="300"> <br>
 
 1. **UV PRE-CHECK**: Precheck UV Offset for all selected objects
     1. Precheck helps to Check `UV Offset` value in Modifiers of Object. Specifically `Array` and `Mirror's` UV Offset.
@@ -86,41 +99,56 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
     2. `Delete UVMap`: Operator to delete the UVMap(s).
 
 
-## CollectionExport Menu
-<img src= "../assets/images/Export_System_Closed.png", width="300", style="vertical-align: top;">
-<img src= "../assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;">
+## Collection Export Menu
+<img src= "../assets/images/EXP_Ops_Closed.png", width="300", style="vertical-align: top;">
+<img src= "../assets/images/EXP_Ops_Base.png", width="300", style="vertical-align: top;">
 
 
-## **Details**:
-1. **Preset Menu Overview**:
+## **Export Menu**
+1. **Preset Menu Overview**:<br>
+    <img src= "../assets/images/EXP_Ops_Closed_solo.png", width="300", style="vertical-align: top;"><br>
     1. `Preset`: Select the Preset from the Presets Menu.
-    2. `Export`: If a Preset is selected, Exports the resulting file. (Read below for more details)
-    3. `Add Preset`: Adds a new preset for Export.
-    4. `Delete Preset`: Deletes the active preset of Export menu
-2. **Preset Properties**:
-    1. `Preset Name`: Rename the Current/Active Preset
-    2. `Export Type:`: Source for the objects/Collections to export
+    2. `Name Field`: Set the name of current preset. Default: `Preset + count`
+    2. `Export`: If a Preset is selected, Exports the resulting file. `(Read below for more details)`
+    3. **`+`**: `ADD`: Adds a new preset for Export.
+    4. **`-`**: `REMOVE`: Deletes the active preset of Export menu
+2. **Preset Properties**:<br>
+    1. **`Source:`**: Select Source for the objects/Collections to export<br>
+        <img src= "../assets/images/EXP_Menu_1.png", width="300", style="vertical-align: top;"><br>
         1. `Collection Objects`: Export the Collection Objects, select Collection in Export Collection Selection Menu.
         2. `Selected Objects`: Exports the selected objects.
-    3. `File Name`: Options for name of the Export file.
+    2. **`File Name`**: Options for name of the Export file.<br>
+        <img src= "../assets/images/EXP_Menu_2.png", width="300", style="vertical-align: top;"><br>
         1. `Project File name`: Export the resulting file as `Blend_file_name.fbx`, Condition being Blend file must be saved in a directory.
         2. `Custom File Name`: Brings out a name field for the export file name.
-            1. `File Name`: Provide the file name for the export file. (Don't leave empty)
-    4. `Export as`: Option to select the file extensions or format of file.
+            1. `File Name`: Provide the file name for the export file. (Don't leave empty)<br>
+        
+    3. **`File Type`**:Option to select the file extensions or format of file. `(Currently 4 below as primary type used, todo: rest)` <br>
+            <img src= "../assets/images/EXP_Menu_3.png", width="300", style="vertical-align: top;"><br>
         1. `FBX Export`: Makes the final export file as 'My_object.fbx'
-        2. `USDz Export`: `(NOT IMPLEMENTED)` Makes the final export file as 'My_object.usdz'
-    5. `Export Path`: click the folder button to select a directory to export file in, or put the directory in yourself.
-    6. `Substance File?`: Click to Toggle `ON` or `OFF`: 
+        2. `OBJ Export`: Makes the final export file as 'My_object.obj'
+        3. `USDz Export`: Makes the final export file as 'My_object.usd*'
+        4. `DAE Export`: Makes the final export file as 'My_object.dae'
+
+    4.  **`File Settings`**: **`WRENCH ICON`** : Select the settings button on right of file type to set custom settings for export file for current preset
+        1. Can also load from user-defined presets for each file format in preferences.<br>
+        <img src= "../assets/images/EXP_Menu_4.png", width="600", style="vertical-align: top;"><br>
+
+    
+    5. **`Path`**: Export Path for file, click the folder button to select a directory to export file in, or type the directory in field yourself.
+    6. **`Substance File?`**: Click to Toggle `ON` or `OFF`: 
         1. If `OFF`: No Extra files apart from mesh file.
         2. If `ON`: Creates a Substance Project with the mesh file.
             1. `Substance Menu`:
                 1. `Diff Name`: If ON: asks for a name for Substance File, Else, uses the object file name above.
                 2. `Spp Path`: File Path for Substance file to be saved in.
                 3. `Tex Path`: Textures Export Path for Substance File.
-    7. `Use File Directory`: Saves the file in the File Directory instead of external path provided.
-    8. `Export Frame`: Default 0, if changed to let's 10. The final objects/collections will be exported at that timeline frame, Helpful if needed objects at specified frame maybe cuz of required Translation of objects at that frame.
+    7. **`Use File Directory`**: Saves the file in the File Directory instead of external path provided.
+    8. **`Export Frame`**: Default 0, if changed to let's 10. The final objects/collections will be exported at that timeline frame, Helpful if needed objects at specified frame maybe cuz of required Translation of objects at that frame.
 
-3. **Export Collection Selection**: Select Collection(s) to include/exclude in export file when `Collection Objects` is selected in Export Type.
+3. **Export Collection Selection**: Select Collection(s) to include/exclude in export file when `Collection Objects` is selected in Export Type.<br>
+**`Note:`** Make sure Source is set to **`Collection Objects`**<br>
+<img src= "../assets/images/EXP_Menu_6.png", width="300", style="vertical-align: top;">
     1. Toggle `Include Collection`: Toggle the collection selection that needs to be included in the final export collections
     2. Toggle `Exclude Collection`: Toggles the Collection selection that needs to be excluded in the final export Collections.
         1. Example: We include a top collection named `Parent`, which has 5 child collections, but we only want to export only 4 collections, There are two methods, either select all 4 childen in Include collection, Or <br>

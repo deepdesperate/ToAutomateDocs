@@ -1,9 +1,11 @@
 # Object Scene Operator
 
-### Rename Low & High Poly Objects Appropriately
+
+### Faster Renaming and Organizing Low & High Poly Objects Appropriately
 
 <!-- ![Renamer UI](assets/images/Ovw_Rename.jpg) -->
-<img src="/assets/images/3D_Tools.png" width=300>
+<img src="/assets/images/3D_Ops_p1.png" width=300>
+
 
 
 #### Properties:
@@ -11,7 +13,7 @@
 2. `HP_Suffix`: Set suffix that will be added to the High Poly Object
 3. `LP Collection`: Set name for the Low poly collection to hold LP Objects
 4. `HP Collection`: Set name for the Low poly collection to hold HP Objects
-5. `Rename`: Rename Button to run the algorithm and rename object
+5. `Rename`: Rename Button to rename and `(if enabled)` move to Low / High Collections respectively.
 
 #### Usage:
 1. Select two objects `active_object` and `second_object`, when the algorithm runs, it will rename the `active_object` and add LP suffix to it. And adds the HP suffix to the non-active object.
@@ -30,10 +32,13 @@
 1. Select any number of object with either `LP` or `HP` prefix or both, then press `Select` what it does is, checks for the `non-matching` or `significant other` in the counter collections `LP_Collection/HP_Collection`. If found it selects the objects and make them active.
 
 
-### Collection Organizer
-Collection Organizer helps in organizing blender collection heirarchy and converts it into heirarchy of empty_parents, that is helpful for working/exporting objects to Unity and other empty_based heirarchy softwares.
 
-![Renamer UI](assets/images/Ovw_colOrganize.jpg)
+
+### Collection Organizer
+
+<img src="/assets/images/3D_Ops_p2.png" width=300>
+
+Collection Organizer helps in organizing blender collection heirarchy and converts it into heirarchy of empty_parents, that is helpful for working/exporting objects to Unity and other empty_based heirarchy softwares.
 
 
 #### UI Overview
