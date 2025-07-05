@@ -4,7 +4,7 @@
 ### Faster Renaming and Organizing Low & High Poly Objects Appropriately
 
 <!-- ![Renamer UI](assets/images/Ovw_Rename.jpg) -->
-<img src="/assets/images/3D_Ops_p1.png" width=300>
+<img src="/assets/images/3D_Ops_p1.png", width="300">
 
 
 
