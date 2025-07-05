@@ -4,7 +4,7 @@
 ### Faster Renaming and Organizing Low & High Poly Objects Appropriately
 
 <!-- ![Renamer UI](assets/images/Ovw_Rename.jpg) -->
-<img src="/assets/images/3D_Ops_p1.png", width="300">
+<img src="../assets/images/3D_Ops_p1.png", width="300">
 
 
 
@@ -36,7 +36,7 @@
 
 ### Collection Organizer
 
-<img src="/assets/images/3D_Ops_p2.png" width=300>
+<img src="../assets/images/3D_Ops_p2.png" width=300>
 
 Collection Organizer helps in organizing blender collection heirarchy and converts it into heirarchy of empty_parents, that is helpful for working/exporting objects to Unity and other empty_based heirarchy softwares.
 
