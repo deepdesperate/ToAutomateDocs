@@ -1,8 +1,8 @@
 # ToAutomate
-<img src= "/assets/images/EXP_Ops_1.png", width="250", style="vertical-align: top;">
-<img src= "/assets/images/3D_Ops.png", width="250", style="vertical-align: top;">
-<img src= "/assets/images/Mesh_Ops.png", width="250", style="vertical-align: top;">
-<img src= "/assets/images/UV_Ops.png", width="250", style="vertical-align: top;">
+<img src= "./assets/images/EXP_Ops_1.png", width="250", style="vertical-align: top;">
+<img src= "./assets/images/3D_Ops.png", width="250", style="vertical-align: top;">
+<img src= "./assets/images/Mesh_Ops.png", width="250", style="vertical-align: top;">
+<img src= "./assets/images/UV_Ops.png", width="250", style="vertical-align: top;">
 
 
 ## **Overview**
