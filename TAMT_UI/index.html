@@ -12,11 +12,11 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../TAMT_op_3DTools/">
+        <link rel="next" href="../TAMT_preferences/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -403,18 +403,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#collectionexport-menu" class="md-nav__link">
+  <a href="#collection-export-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      CollectionExport Menu
+      Collection Export Menu
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#details" class="md-nav__link">
+  <a href="#export-menu" class="md-nav__link">
     <span class="md-ellipsis">
-      Details:
+      Export Menu
     </span>
   </a>
   
@@ -436,81 +436,35 @@
   
   
     <li class="md-nav__item">
+      <a href="../TAMT_preferences/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preferences
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../TAMT_op_3DTools/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Object & Scene Tools
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TAMT_op_MeshTools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Mesh Tools
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TAMT_op_UVTools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    UV Tools
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TAMT_op_EXPTools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Export Tools
     
   </span>
   
@@ -569,10 +523,11 @@
 <h1 id="user-interface">User Interface</h1>
 <p>The ToAutomate UI is located in the Properties(Press N) Panel of the 3D-View.</p>
 <h2 id="side-panel">Side Panel</h2>
-<p><img src= "../assets/images/ToAutomate_Main.png", width="600"> <br>
+<p><img src= "../assets/images/ToAutomate_SideBar.png", width="300"> <br>
 Located in the Properties Panel of 3D View, Tap <code>To Automate</code> to get started and you'll see following tool menus.</p>
 <h2 id="3d-object-tools">3D Object Tools</h2>
-<p><img src= "../assets/images/3D_Tools.png", width="300"> <br></p>
+<p><img src= "../assets/images/3D_Ops_p1.png", width="300"> 
+<img src= "../assets/images/3D_Ops_p2.png", width="300"> <br></p>
 <ol>
 <li>
 <p><strong>Rename</strong>: Select Two Object and press <code>Rename</code>, It Renames the active Object and add '_LP' suffix to it and '_HP' suffix to the other selected object</p>
@@ -586,35 +541,34 @@ Located in the Properties Panel of 3D View, Tap <code>To Automate</code> to get 
 <li>
 <p><strong>Object Organize Method</strong></p>
 <ol>
-<li>Method to Organize: <ol>
-<li><code>OP1</code>: Separate Low-High:  When pressed Rename, Moves the Low and High suffix objects to the individual <code>Low_Col</code> and <code>High_Col</code> Collections respectively.<br> Toggle the <code>Check</code> in front of LP Col and HP Col to disable moving to collection.</li>
-<li><code>OP2</code>: Object Collection: When pressed Rename, Moves both the Low and High suffixed objects to a new <code>Object's name</code> Collection. <br> <strong>Example:</strong> Resulting <code>"Cube_LP"</code> and <code>"Cube_HP"</code> Objects will both be in Collection <code>"Cube"</code>.</li>
+<li>Method to Organize: <br><ol>
+<li><img src= "../assets/images/3D_Menu_1.png", width="300"> <br></li>
+<li><code>OP1</code>: <strong>Separate Low-High</strong>:  When pressed Rename, Moves the Low and High suffix objects to the individual <code>Low_Col</code> and <code>High_Col</code> Collections respectively.<br> Toggle the <code>Check</code> in front of LP Col and HP Col to disable moving to collection.</li>
+<li><code>OP2</code> : <strong>Object Collection</strong>: When pressed Rename, Moves both the Low and High suffixed objects to a new <code>Object's name</code> Collection. <br> <strong>Example:</strong> Resulting <code>"Cube_LP"</code> and <code>"Cube_HP"</code> Objects will both be in Collection <code>"Cube"</code>.</li>
 </ol>
 </li>
 </ol>
 </li>
 <li>
-<p><strong>Selection Menu</strong>:</p>
+<p><strong>Selection Menu</strong>:<br>
+     <img src= "../assets/images/3D_Menu_2.png", width="300"> <br></p>
 <ol>
-<li><code>OP1</code>: To Check if an object's counterpart (Low or high) exists.</li>
-<li><code>OP2</code>: To Check if any object doesn't have it's Counterpart (Low or high) and select them.</li>
-<li><code>Note</code>: Works with respect to defined/named LP Col and HP Col in Organize Method </li>
-</ol>
-</li>
-<li>
-<p><strong>Collection Organizer</strong>: Converts the Blender's Collection Heirarchy to Empty object-parent collection for the collection tree, Helpful when want to preserve heirarchy for .fbx or other 3D softwares.</p>
-<ol>
-<li><code>Source Col</code>: Select a Source Collection to Convert to Empty-object Parent heirarchy.</li>
-<li><code>Parent</code>: Toggle Parent if we want an external Empty-Object that will go on top of the Final src Collection object.<ol start="3">
-<li><code>Name</code>: Give a name for the External Parent Object, If doesn't exist, will create it</li>
-</ol>
-</li>
-<li><code>Organize</code>: Press Organize and convert your Collection Heirarchy into empty-parent heirarchy</li>
+<li><code>OP1</code> , <strong><code>Non-matching Object</code></strong>: To Check if an object's counterpart (Low or high) exists.</li>
+<li><code>OP2</code> , <strong><code>Significant Other</code></strong>: To Check if any object doesn't have it's Counterpart (Low or high) and select them.<br></li>
+<li><strong><code>Note</code></strong>: Works with respect to defined/named LP Col and HP Col in Organize Method  </li>
 </ol>
 </li>
 </ol>
+<p><img src= "../assets/images/3D_Ops_p2.png", style="float: right; margin-left: 1rem; width: 300px;"> 
+4. <strong>Collection Organizer</strong>: Converts the Blender's Collection Heirarchy to Empty object-parent collection for the collection tree, Helpful when want to preserve heirarchy for .fbx or other 3D softwares.<br>
+    1. <code>Source Col</code>: Select a Source Collection to Convert to Empty-object Parent heirarchy.<br>
+    2. <code>Parent</code>: Toggle Parent if we want an external Empty-Object that will go on top of the Final src Collection object.<br>
+        3. <code>Name</code>: Give a name for the External Parent Object, If doesn't exist, will create it<br>
+    3. <code>Organize</code>: Press Organize and convert your Collection Heirarchy into empty-parent heirarchy<br></p>
+<div style="clear: both;"></div>
+
+<p><img src= "../assets/images/Mesh_Ops.png", style="float: right; vertical-align: center;  margin-left: 1rem; width: 300px;"> </p>
 <h2 id="mesh-menu">Mesh Menu</h2>
-<p><img src= "../assets/images/Mesh_Operators.png", width="300"> <br></p>
 <ol>
 <li><strong>Modifiers</strong>:<ol>
 <li>Overview: Applies the following Modifiers to all selected objects.</li>
@@ -647,8 +601,10 @@ Adds a triangulate modifier, with <code>keep normals</code> toggled <code>On</co
 </ol>
 </li>
 </ol>
+<div style="clear: both;"></div>
+
 <h2 id="uv-menu">UV Menu</h2>
-<p><img src= "../assets/images/UV_Operators.png", width="300"> <br></p>
+<p><img src= "../assets/images/UV_Ops.png", width="300"> <br></p>
 <ol>
 <li><strong>UV PRE-CHECK</strong>: Precheck UV Offset for all selected objects<ol>
 <li>Precheck helps to Check <code>UV Offset</code> value in Modifiers of Object. Specifically <code>Array</code> and <code>Mirror's</code> UV Offset.<ol>
@@ -699,42 +655,61 @@ Adds a triangulate modifier, with <code>keep normals</code> toggled <code>On</co
 </ol>
 </li>
 </ol>
-<h2 id="collectionexport-menu">CollectionExport Menu</h2>
-<p><img src= "../assets/images/Export_System_Closed.png", width="300", style="vertical-align: top;">
-<img src= "../assets/images/Export_System_Exp.png", width="300", style="vertical-align: top;"></p>
-<h2 id="details"><strong>Details</strong>:</h2>
+<h2 id="collection-export-menu">Collection Export Menu</h2>
+<p><img src= "../assets/images/EXP_Ops_Closed.png", width="300", style="vertical-align: top;">
+<img src= "../assets/images/EXP_Ops_Base.png", width="300", style="vertical-align: top;"></p>
+<h2 id="export-menu"><strong>Export Menu</strong></h2>
 <ol>
-<li><strong>Preset Menu Overview</strong>:<ol>
+<li><strong>Preset Menu Overview</strong>:<br>
+    <img src= "../assets/images/EXP_Ops_Closed_solo.png", width="300", style="vertical-align: top;"><br><ol>
 <li><code>Preset</code>: Select the Preset from the Presets Menu.</li>
-<li><code>Export</code>: If a Preset is selected, Exports the resulting file. (Read below for more details)</li>
-<li><code>Add Preset</code>: Adds a new preset for Export.</li>
-<li><code>Delete Preset</code>: Deletes the active preset of Export menu</li>
+<li><code>Name Field</code>: Set the name of current preset. Default: <code>Preset + count</code></li>
+<li><code>Export</code>: If a Preset is selected, Exports the resulting file. <code>(Read below for more details)</code></li>
+<li><strong><code>+</code></strong>: <code>ADD</code>: Adds a new preset for Export.</li>
+<li><strong><code>-</code></strong>: <code>REMOVE</code>: Deletes the active preset of Export menu</li>
 </ol>
 </li>
 <li>
-<p><strong>Preset Properties</strong>:</p>
+<p><strong>Preset Properties</strong>:<br></p>
 <ol>
-<li><code>Preset Name</code>: Rename the Current/Active Preset</li>
-<li><code>Export Type:</code>: Source for the objects/Collections to export<ol>
+<li><strong><code>Source:</code></strong>: Select Source for the objects/Collections to export<br>
+    <img src= "../assets/images/EXP_Menu_1.png", width="300", style="vertical-align: top;"><br><ol>
 <li><code>Collection Objects</code>: Export the Collection Objects, select Collection in Export Collection Selection Menu.</li>
 <li><code>Selected Objects</code>: Exports the selected objects.</li>
 </ol>
 </li>
-<li><code>File Name</code>: Options for name of the Export file.<ol>
+<li>
+<p><strong><code>File Name</code></strong>: Options for name of the Export file.<br>
+    <img src= "../assets/images/EXP_Menu_2.png", width="300", style="vertical-align: top;"><br></p>
+<ol>
 <li><code>Project File name</code>: Export the resulting file as <code>Blend_file_name.fbx</code>, Condition being Blend file must be saved in a directory.</li>
 <li><code>Custom File Name</code>: Brings out a name field for the export file name.<ol>
-<li><code>File Name</code>: Provide the file name for the export file. (Don't leave empty)</li>
+<li><code>File Name</code>: Provide the file name for the export file. (Don't leave empty)<br></li>
 </ol>
 </li>
 </ol>
 </li>
-<li><code>Export as</code>: Option to select the file extensions or format of file.<ol>
+<li>
+<p><strong><code>File Type</code></strong>:Option to select the file extensions or format of file. <code>(Currently 4 below as primary type used, todo: rest)</code> <br>
+        <img src= "../assets/images/EXP_Menu_3.png", width="300", style="vertical-align: top;"><br></p>
+<ol>
 <li><code>FBX Export</code>: Makes the final export file as 'My_object.fbx'</li>
-<li><code>USDz Export</code>: <code>(NOT IMPLEMENTED)</code> Makes the final export file as 'My_object.usdz'</li>
+<li><code>OBJ Export</code>: Makes the final export file as 'My_object.obj'</li>
+<li><code>USDz Export</code>: Makes the final export file as 'My_object.usd*'</li>
+<li><code>DAE Export</code>: Makes the final export file as 'My_object.dae'</li>
 </ol>
 </li>
-<li><code>Export Path</code>: click the folder button to select a directory to export file in, or put the directory in yourself.</li>
-<li><code>Substance File?</code>: Click to Toggle <code>ON</code> or <code>OFF</code>: <ol>
+<li>
+<p><strong><code>File Settings</code></strong>: <strong><code>WRENCH ICON</code></strong> : Select the settings button on right of file type to set custom settings for export file for current preset</p>
+<ol>
+<li>Can also load from user-defined presets for each file format in preferences.<br>
+<img src= "../assets/images/EXP_Menu_4.png", width="600", style="vertical-align: top;"><br></li>
+</ol>
+</li>
+<li>
+<p><strong><code>Path</code></strong>: Export Path for file, click the folder button to select a directory to export file in, or type the directory in field yourself.</p>
+</li>
+<li><strong><code>Substance File?</code></strong>: Click to Toggle <code>ON</code> or <code>OFF</code>: <ol>
 <li>If <code>OFF</code>: No Extra files apart from mesh file.</li>
 <li>If <code>ON</code>: Creates a Substance Project with the mesh file.<ol>
 <li><code>Substance Menu</code>:<ol>
@@ -747,12 +722,14 @@ Adds a triangulate modifier, with <code>keep normals</code> toggled <code>On</co
 </li>
 </ol>
 </li>
-<li><code>Use File Directory</code>: Saves the file in the File Directory instead of external path provided.</li>
-<li><code>Export Frame</code>: Default 0, if changed to let's 10. The final objects/collections will be exported at that timeline frame, Helpful if needed objects at specified frame maybe cuz of required Translation of objects at that frame.</li>
+<li><strong><code>Use File Directory</code></strong>: Saves the file in the File Directory instead of external path provided.</li>
+<li><strong><code>Export Frame</code></strong>: Default 0, if changed to let's 10. The final objects/collections will be exported at that timeline frame, Helpful if needed objects at specified frame maybe cuz of required Translation of objects at that frame.</li>
 </ol>
 </li>
 <li>
-<p><strong>Export Collection Selection</strong>: Select Collection(s) to include/exclude in export file when <code>Collection Objects</code> is selected in Export Type.</p>
+<p><strong>Export Collection Selection</strong>: Select Collection(s) to include/exclude in export file when <code>Collection Objects</code> is selected in Export Type.<br>
+<strong><code>Note:</code></strong> Make sure Source is set to <strong><code>Collection Objects</code></strong><br>
+<img src= "../assets/images/EXP_Menu_6.png", width="300", style="vertical-align: top;"></p>
 <ol>
 <li>Toggle <code>Include Collection</code>: Toggle the collection selection that needs to be included in the final export collections</li>
 <li>Toggle <code>Exclude Collection</code>: Toggles the Collection selection that needs to be excluded in the final export Collections.<ol>
