@@ -15,6 +15,13 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
     1. On Press of Rename, the active Object (named "Cube") get renamed to Cube + "_LP" (`Low Suffix`) and second selected object get renamed Cube + "_HP" (High Suffix)
     2. Resulting name of active_object becomes from "Cube" to "Cube_LP"<br>
         and for `second` selected object "Cube_HP", <br>High_name = Low_object_name + high_suffix
+    3. **`Properties`**: 
+        1. `Low Suffix`: Suffix for low poly object.
+        2. `High Suffix`: Suffix for low poly object.
+        3. `LP Col`: Name for the Collection to store low poly objects. [Toggle **`ON`** to move respective objects to this collection, ]
+        4. `HP Col`: Name for the Collection to store high poly objects. [Toggle **`ON`** to move respective objects to this collection, ]
+    
+
 
 
 
@@ -131,8 +138,8 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
         4. `DAE Export`: Makes the final export file as 'My_object.dae'
 
     4.  **`File Settings`**: **`WRENCH ICON`** : Select the settings button on right of file type to set custom settings for export file for current preset
-        1. Can also load from user-defined presets for each file format in preferences.<br>
-        <img src= "../assets/images/EXP_Menu_4.png", width="600", style="vertical-align: top;"><br>
+        1. Can also load presets from user-defined presets for each file format in Addon preferences.<br>
+        <img src= "../assets/images/EXP_Menu_4.png", width = "700", style="vertical-align: top;"><br>
 
     
     5. **`Path`**: Export Path for file, click the folder button to select a directory to export file in, or type the directory in field yourself.
@@ -151,11 +158,12 @@ Located in the Properties Panel of 3D View, Tap `To Automate` to get started and
 <img src= "../assets/images/EXP_Menu_6.png", width="300", style="vertical-align: top;">
     1. Toggle `Include Collection`: Toggle the collection selection that needs to be included in the final export collections
     2. Toggle `Exclude Collection`: Toggles the Collection selection that needs to be excluded in the final export Collections.
-        1. Example: We include a top collection named `Parent`, which has 5 child collections, but we only want to export only 4 collections, There are two methods, either select all 4 childen in Include collection, Or <br>
-        Select the unwanted collection in the Exclude Collection, the resulting collection will be free of excluded collections.
-    3. `Add Collection`: Adds the selection Collection (in the outliner) to list of either `Included Collections` or `Excluded Collections` whichever option is selected.
+        1. Example: We include a top collection named `Parent`, which has 5 child collections, but we only want to export only 4 collections, There are two methods, either select all 4 childen in Include collection, <br>
+        Or select the Top(`Parent`) Collection in `Included` set and Select the unwanted collection in the `Exclude` Collection, the resulting set of collection will be free of excluded collections.
+    3. `Add Collection`: Adds the selected Collection (in the outliner) to list of either `Included Collections` or `Excluded Collections` whichever option is selected.
         1. `Note`: Add any top-level collection to include and all it's sub-collections or sub-sub collections ... all collections will be exported.
         2. `Note 2`: If wants to exclude some children or sub collection, select exclude collection and from the Collection tree, it will excluded when Exporting Collection Heirarchy.
+        3. `Note 3`: Make sure to select a different collection in outliner if want to Add more collection, if a selection is already in the current list, it won't be added again.
 
     4. `EDIT Collections`: Toggle `ON` to edit Collections list or `OFF` to avoid removing any collection by mistake.
     5. `INCLUDED Collections` or `EXCLUDED Collections`:
