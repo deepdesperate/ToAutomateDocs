@@ -536,6 +536,13 @@ Located in the Properties Panel of 3D View, Tap <code>To Automate</code> to get 
 <li>On Press of Rename, the active Object (named "Cube") get renamed to Cube + "_LP" (<code>Low Suffix</code>) and second selected object get renamed Cube + "_HP" (High Suffix)</li>
 <li>Resulting name of active_object becomes from "Cube" to "Cube_LP"<br>
     and for <code>second</code> selected object "Cube_HP", <br>High_name = Low_object_name + high_suffix</li>
+<li><strong><code>Properties</code></strong>: <ol>
+<li><code>Low Suffix</code>: Suffix for low poly object.</li>
+<li><code>High Suffix</code>: Suffix for low poly object.</li>
+<li><code>LP Col</code>: Name for the Collection to store low poly objects. [Toggle <strong><code>ON</code></strong> to move respective objects to this collection, ]</li>
+<li><code>HP Col</code>: Name for the Collection to store high poly objects. [Toggle <strong><code>ON</code></strong> to move respective objects to this collection, ]</li>
+</ol>
+</li>
 </ol>
 </li>
 <li>
@@ -702,8 +709,8 @@ Adds a triangulate modifier, with <code>keep normals</code> toggled <code>On</co
 <li>
 <p><strong><code>File Settings</code></strong>: <strong><code>WRENCH ICON</code></strong> : Select the settings button on right of file type to set custom settings for export file for current preset</p>
 <ol>
-<li>Can also load from user-defined presets for each file format in preferences.<br>
-<img src= "../assets/images/EXP_Menu_4.png", width="600", style="vertical-align: top;"><br></li>
+<li>Can also load presets from user-defined presets for each file format in Addon preferences.<br>
+<img src= "../assets/images/EXP_Menu_4.png", width = "700", style="vertical-align: top;"><br></li>
 </ol>
 </li>
 <li>
@@ -733,15 +740,16 @@ Adds a triangulate modifier, with <code>keep normals</code> toggled <code>On</co
 <ol>
 <li>Toggle <code>Include Collection</code>: Toggle the collection selection that needs to be included in the final export collections</li>
 <li>Toggle <code>Exclude Collection</code>: Toggles the Collection selection that needs to be excluded in the final export Collections.<ol>
-<li>Example: We include a top collection named <code>Parent</code>, which has 5 child collections, but we only want to export only 4 collections, There are two methods, either select all 4 childen in Include collection, Or <br>
-Select the unwanted collection in the Exclude Collection, the resulting collection will be free of excluded collections.</li>
+<li>Example: We include a top collection named <code>Parent</code>, which has 5 child collections, but we only want to export only 4 collections, There are two methods, either select all 4 childen in Include collection, <br>
+Or select the Top(<code>Parent</code>) Collection in <code>Included</code> set and Select the unwanted collection in the <code>Exclude</code> Collection, the resulting set of collection will be free of excluded collections.</li>
 </ol>
 </li>
 <li>
-<p><code>Add Collection</code>: Adds the selection Collection (in the outliner) to list of either <code>Included Collections</code> or <code>Excluded Collections</code> whichever option is selected.</p>
+<p><code>Add Collection</code>: Adds the selected Collection (in the outliner) to list of either <code>Included Collections</code> or <code>Excluded Collections</code> whichever option is selected.</p>
 <ol>
 <li><code>Note</code>: Add any top-level collection to include and all it's sub-collections or sub-sub collections ... all collections will be exported.</li>
 <li><code>Note 2</code>: If wants to exclude some children or sub collection, select exclude collection and from the Collection tree, it will excluded when Exporting Collection Heirarchy.</li>
+<li><code>Note 3</code>: Make sure to select a different collection in outliner if want to Add more collection, if a selection is already in the current list, it won't be added again.</li>
 </ol>
 </li>
 <li>
