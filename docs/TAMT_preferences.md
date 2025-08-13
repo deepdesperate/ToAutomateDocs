@@ -2,6 +2,10 @@
 Addon Preference menu for ToAutomate.<br>
 <img src= "../assets/images/Prefs_Main.png", width="500", style="vertical-align: top;"><br>
 
+## Video Tutorial
+<!-- ![](https://www.youtube.com/watch?v=9r2uXmUpA5g) -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i6-da0sqhdM?si=X9Eifkts1PhB_kqB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Preferences Settings
 
 ### Substance Painter Executable:

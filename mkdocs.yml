@@ -12,6 +12,10 @@ theme:
     - search.highlight
     - header.autohide
 
+plugins:
+  - search
+  - mkdocs-video
+
 site_name: To Automate
 nav:
   - ToAutomate: 
@@ -21,7 +25,7 @@ nav:
     - Object & Scene Tools: TAMT_op_3DTools.md
     # - Mesh Tools: TAMT_op_MeshTools.md
     # - UV Tools: TAMT_op_UVTools.md
-    # - Export Tools: TAMT_op_EXPTools.md
+    - Export Tools: TAMT_op_EXPTools.md
   - About: about.md
 
   
